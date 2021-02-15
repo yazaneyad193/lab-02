@@ -1,0 +1,13 @@
+div{
+    float: left;
+    margin: 50px;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+img{
+    width: 250px;
+    height: 150px;
+}
