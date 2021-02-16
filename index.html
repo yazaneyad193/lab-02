@@ -4,45 +4,46 @@
 <head>
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layouts.css">
-    <link rel="stylesheet" href="css/modules.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/modules.css">
+   
+    <link rel="stylesheet" href="css/layouts.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script id='template-neigh' type='text/x-tmpl-mustache'>
+      <div class = '{{keyword}}'>
+        <h2>{{title}}</h2>
+        <img width='200px' src="{{{image_url}}}" />
+        <p>{{description}}</p>
+      </div>
+    </script>
 </head>
 
 <body>
-    <h1>The Gallery of Horns</h1>
-    <select>
-        <option value="default">Filter by Keyword</option>
-        <!-- <option value="narwhal">narwhal</option>
-        <option value="rhino">rhino</option>
-        <option value="unicorn">unicorn</option>
-        <option value="unilego">unilego</option>
-        <option value="triceratops">triceratops</option>
-        <option value="markhor">markhor</option>
-        <option value="mouflon">mouflon</option>
-        <option value="addax">addax</option>
-        <option value="chameleon">chameleon</option>
-        <option value="lizard">lizard</option>
-        <option value="dragon">dragon</option> -->
-    </select>
+    <header>
+        <h1>The Gallery of Horns</h1>
+        <button id="pageOne">Page 1</button>
+        <button id="pageTwo">Page 2</button>
+        <button id='title'>Sort By Title</button>
+        <select>
+            <option value="default">Filter by Keyword</option>
+        </select>
     </header>
     <main>
         <div class="photo-template">
-
-            <h2></h2>
+            <!-- <h2></h2>
             <img src="" alt="">
-            <p></p>
-
+            <p></p> -->
         </div>
-
     </main>
     <footer>
-        &copy; 2021 Code Fellows
+        &copy; 2018 Code Fellows
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"
+        integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ=="
+        crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 

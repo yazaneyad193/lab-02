@@ -2,13 +2,47 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #9ad3bc;
-}
-.photo-template{
+/* .photo-template{
     display: none;
-}
+} */
 
-div *{
+ *{
     padding-top: 20px;
 }
+
+header{
+    text-align: center;
+    padding-bottom: 50px;
+  
+}
+
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  main div{
+    display: flex;
+    flex-flow: row wrap;
+    
+  }
+  div img {
+    width: 250px;
+    overflow-wrap: break-word;
+    margin: 10px;
+    height: 400px;
+    text-align: center;
+}
+  div p {
+    display: flex;
+    flex-flow: row wrap;
+    width: 200px;
+    
+  }
+  div h1 {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
