@@ -7,6 +7,12 @@ div{
     background-color: aquamarine;
 }
 
+div{
+    float: left;
+    margin: 50px;
+    width: 250px;
+    height: 400px;
+}
 img{
     width: 250px;
     height: 150px;
