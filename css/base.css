@@ -1,3 +1,14 @@
 *{
     box-sizing: border-box;
 }
+
+body{
+    background-color: #9ad3bc;
+}
+.photo-template{
+    display: none;
+}
+
+div *{
+    padding-top: 20px;
+}
